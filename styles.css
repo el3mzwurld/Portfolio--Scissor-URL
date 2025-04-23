@@ -291,9 +291,9 @@ main {
         position: relative;
         width: 780px;
         height: 270px;
-        background-color: transparent;
+        /* background-color: transparent;
         margin-left: 300px;
-        padding-top: 20px;
+        padding-top: 20px;*/
         img {
           width: 225px;
           margin-left: 0px;
@@ -858,6 +858,138 @@ main {
       width: 100%;
       height: 523px;
       background-image: url("./assets/URL--bg.svg");
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        width: 476px;
+        height: 355px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+
+        .form--group {
+          width: 392px;
+          height: 55px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          #url {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+
+            border-radius: 10px;
+
+            border: 0.8px solid var(--header--txt--sub);
+          }
+          #url::placeholder {
+            color: var(--header--txt--main);
+            font-family: "montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            padding-left: 20px;
+            color: var(--header--txt--sub);
+          }
+          #url:focus {
+            outline: none;
+            border: 0.8px solid var(--header--txt--sub);
+          }
+
+          .group {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            select {
+              width: 202px;
+              height: 100%;
+              border-radius: 10px;
+              border: 0.8px solid var(--header--txt--sub);
+              font-family: "montserrat", sans-serif;
+              color: var(--header--txt--sub);
+              font-size: 16px;
+              font-weight: 400;
+              text-align: left;
+              padding-left: 10px;
+              padding-right: 20px;
+            }
+            select:focus {
+              outline: none;
+              border: 0.8px solid var(--header--txt--sub);
+            }
+
+            input {
+              width: 202px;
+              height: 100%;
+
+              border-radius: 10px;
+
+              border: 0.8px solid var(--header--txt--sub);
+            }
+            input::placeholder {
+              color: var(--header--txt--main);
+              font-family: "montserrat", sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              text-align: left;
+              padding-left: 20px;
+              color: var(--header--txt--sub);
+            }
+            input:focus {
+              outline: none;
+              border: 0.8px solid var(--header--txt--sub);
+            }
+          }
+        }
+        .form--btn {
+          width: 392px;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            width: 100%;
+            height: 48px;
+            background-color: var(--header--txt--sub);
+            color: white;
+            font-family: "poppins", sans-serif;
+            border: none;
+            border-radius: 100px;
+          }
+          .footer {
+            display: flex;
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: "montserrat", sans-serif;
+            font-size: 14px;
+            color: var(--header--txt--sub);
+
+            .blue {
+              font-weight: 600;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -895,5 +1027,10 @@ main {
       justify-content: center;
       align-items: center;
     }
+  }
+  .footer {
+    width: 100%;
+    height: 561px;
+    background-color: black;
   }
 }
