@@ -452,6 +452,7 @@ main {
         left: 0%;
         width: 398px;
         height: 256px;
+        margin-top: 30px;
         background-color: transparent;
 
         .card--title {
@@ -509,8 +510,8 @@ main {
 
           position: relative;
           .ico {
-            height: 56px;
-            width: 56px;
+            height: 100px;
+            width: 100px;
             background-color: #e6edf9;
             display: flex;
             justify-content: center;
@@ -518,6 +519,11 @@ main {
             border-radius: 50%;
             margin-left: 5px;
             margin-top: 5px;
+
+            img {
+              width: 50px;
+              height: 50px;
+            }
           }
           .card--txt {
             position: absolute;
@@ -837,6 +843,57 @@ main {
           }
         }
       }
+    }
+  }
+
+  .hero--five {
+    width: 100%;
+    height: 550px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .hero--form {
+      width: 100%;
+      height: 523px;
+      background-image: url("./assets/URL--bg.svg");
+    }
+  }
+
+  .hero--six {
+    width: 100%;
+    height: 1200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero--faq {
+      width: 792px;
+      height: 995px;
+      background-color: black;
+    }
+  }
+  .hero--seven {
+    width: 100%;
+    height: 310px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero--call-to-action {
+      width: 100%;
+      height: 299px;
+      background-image: url("./assets/hero_seven_bg.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
