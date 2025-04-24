@@ -1685,6 +1685,10 @@ main {
         padding: 0px 0px;
         position: absolute;
         top: 0%;
+        animation: main--start 1s ease-in forwards;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+
         .txt--main {
           width: 382px;
           height: 150px;
@@ -1713,6 +1717,22 @@ main {
           }
         }
       }
+
+      @keyframes main--start {
+        0% {
+          transform: translateY(-200px);
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(-180px);
+          opacity: 0.5;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
       .hero--main {
         display: none;
       }
