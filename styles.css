@@ -1706,7 +1706,10 @@ main {
           font-size: 20px;
 
           .btn--hero--reg {
-            font-size: 20px;
+            font-size: 18px;
+          }
+          .btn--hero--learn {
+            font-size: 18px;
           }
         }
       }
