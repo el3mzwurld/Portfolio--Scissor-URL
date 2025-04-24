@@ -1688,7 +1688,7 @@ main {
         animation: main--start 1s ease-in forwards;
         animation-iteration-count: 1;
         animation-delay: 1s;
-
+        transition: 1s ease-in;
         .txt--main {
           width: 382px;
           height: 150px;
