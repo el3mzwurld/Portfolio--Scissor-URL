@@ -1704,6 +1704,10 @@ main {
           display: flex;
           flex-direction: column;
           font-size: 20px;
+
+          .btn--hero--reg {
+            font-size: 20px;
+          }
         }
       }
       .hero--main {
