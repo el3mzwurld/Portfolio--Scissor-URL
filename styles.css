@@ -1743,7 +1743,7 @@ main {
     .hero--three {
       display: block;
       width: 100%;
-      height: 1090px;
+      height: 1000px;
       background-color: transparent;
       .hero--features {
         display: flex;
@@ -1827,6 +1827,99 @@ main {
     }
     .hero--four {
       display: none;
+      width: 100%;
+      height: 2000px;
+      display: grid;
+      place-items: center;
+      background-color: transparent;
+
+      .hero--pricing {
+        width: 100%;
+        height: 1991px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title--card {
+          width: 100%;
+          height: 48px;
+          display: flex;
+          align-items: flex-start;
+
+          .title {
+            width: 400px;
+            height: 60%;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            background-color: transparent;
+            p {
+              padding-left: 10px;
+            }
+          }
+          .sub--txt {
+            display: none;
+          }
+        }
+
+        .prices {
+          width: 389px;
+          height: 1637px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: transparent;
+
+          gap: 50px;
+          position: relative;
+          .price--card {
+            width: 385px;
+            height: 455px;
+          }
+          #first {
+            position: absolute;
+            top: 1%;
+            left: 1.55%;
+          }
+          #middle-card {
+            position: absolute;
+            top: 31%;
+            left: 1.55%;
+          }
+          #last {
+            position: absolute;
+            bottom: 1%;
+            left: 1.55%;
+            width: 385px;
+            height: 627px;
+          }
+        }
+
+        .pricing--btn {
+          width: 100%;
+          height: 176px;
+          display: grid;
+          place-items: center;
+          margin: 0px 0px;
+          padding: 0px 0px;
+
+          .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100%;
+
+            button {
+              width: 100%;
+              height: 48px;
+              border-radius: 100px;
+            }
+          }
+        }
+      }
     }
     .hero--five {
       display: none;
