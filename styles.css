@@ -205,6 +205,7 @@ main {
       justify-content: center;
       align-items: center;
       gap: 0px;
+
       .txt--main {
         width: 100%;
         height: 200px;
@@ -213,11 +214,25 @@ main {
         font-size: 45px;
         font-weight: 600;
         padding: 0px 3px;
+        animation: start-rise 0.5s ease-in forwards;
+        animation-iteration-count: 1;
+        animation-delay: 2.5s;
+        transition: 1s ease;
 
         span {
           .underline {
             color: var(--header--txt--sub);
           }
+        }
+      }
+      @keyframes start-rise {
+        from {
+          transform: translateY(-300px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
         }
       }
       .txt--sub {
@@ -255,25 +270,6 @@ main {
           overflow: hidden; /* Clip the animation within the button */
           transition: color 2.5s ease-in; /* Smooth text color transition */
         }
-        .btn--hero--reg::before {
-          content: none;
-          position: absolute;
-          top: 0;
-          left: -100%; /* Start from the left, completely out of view */
-          width: 100%;
-          height: 100%;
-          background-color: black;
-          color: transparent;
-          transition: left 2 ease-in-out; /* Smooth leftward animation */
-          z-index: -1; /* Place the overlay behind the text */
-        }
-        .btn--hero--reg:hover::before {
-          left: 0; /* Move the black overlay into view from the left */
-        }
-        .btn--hero--reg:hover {
-          background-color: purple;
-          /* Change text color on hover */
-        }
         .btn--hero--learn {
           font-family: "Poppins", sans-serif;
           border: none;
@@ -284,6 +280,7 @@ main {
         }
       }
     }
+
     .hero--main {
       width: 100%;
       height: 433px;
@@ -605,6 +602,11 @@ main {
             }
           }
         }
+        .card:hover {
+          transform: translateY(-10px);
+
+          transition: all 1s ease-out;
+        }
       }
     }
   }
@@ -686,7 +688,7 @@ main {
           height: 455px;
           display: flex;
           flex-direction: column;
-
+          cursor: pointer;
           align-items: center;
 
           .content {
@@ -745,12 +747,17 @@ main {
             }
           }
         }
+
         #first {
           left: 0%;
           top: 14%;
           background-color: transparent;
           border: 0.8px solid var(--header--txt--sub);
           border-radius: 20px;
+        }
+        #first:hover {
+          transform: translate(-10px, -20px);
+          transition: 1s ease;
         }
         #middle-card {
           overflow: none;
@@ -784,6 +791,10 @@ main {
             }
           }
         }
+        #middle-card:hover {
+          transform: translate(10px, -20px);
+          transition: 1s ease;
+        }
         #last {
           left: 32%;
           width: 410px;
@@ -807,6 +818,7 @@ main {
               width: 100%;
               text-align: left;
             }
+
             .pricing--main {
               width: 195px;
               height: 320px;
@@ -845,6 +857,10 @@ main {
             }
           }
         }
+        #last:hover {
+          transform: translateY(-20px);
+          transition: 1s ease;
+        }
       }
       .pricing--btn {
         display: flex;
@@ -881,6 +897,8 @@ main {
             font-size: 16px;
             font-weight: 500;
             color: #0065fe;
+          }
+          .custom:hover {
           }
           .select {
             background-color: var(--header--txt--sub);
