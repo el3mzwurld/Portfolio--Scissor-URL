@@ -1600,7 +1600,7 @@ main {
 }
 
 /*Smaller Hand-held devices(e.g iphones)*/
-@media (max-width: 470px) {
+@media (max-width: 800px) {
   body {
     width: 100vw;
     height: 100vh;
